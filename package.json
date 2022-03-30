@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -s sb_public"
+    "build-storybook": "build-storybook -s sb_public",
+    "doc": "vuese gen --outDir doc_md --genType markdown"
   },
   "dependencies": {
     "@storybook/vue": "^6.4.19",
