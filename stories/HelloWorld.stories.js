@@ -7,12 +7,15 @@ export default {
         msg: {
             control: 'text',
             defaultValue: 'Hello World',
-        }
+        },
+        input: {
+            action: 'input',
+        },
     },
 }
 
 export const Default = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { HelloWorld },
-    template: "<HelloWorld :msg=msg />",
+    template: `<HelloWorld :msg=msg v-on="{ 'input': input }" />`,
 })
