@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "buid-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -s sb_public"
   },
   "dependencies": {
     "@storybook/vue": "^6.4.19",
@@ -15,12 +15,18 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.4",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
